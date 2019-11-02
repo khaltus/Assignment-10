@@ -1,0 +1,89 @@
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'PT Serif', 'Noto Serif', 'Cambria', 'Times New Roman', serif;
+    background: #5598b2;
+    color: #333;
+    margin: 0;
+}
+h1 {
+    font-family:'Josefin Sans', 'Poppins', 'Calibri', 'Arial', sans-serif;
+    margin: 2rem;
+}
+footer {
+    grid-area: footer; /* keep */
+    background: #b2988a; /* keep */
+    text-align: center;
+}
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+}
+#tagline {
+    font-style: italic;
+}
+/* all images will stretch to fill their containing element */
+img {
+    display: block; /* keep */
+    width: 100%; /* keep */
+    margin: 0;
+}
+
+/* In the grid container below, you will change the columns,
+    the rows, and the AREAS to layout the page as instructed
+    in the assignment. After it matches the wide example, you will
+    write a media query with CSS rules to change the
+    layout to match the phone layout example.
+    */
+
+/* grid container */
+#container {
+    max-width: 1280px; /* keep */
+    margin: auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header"
+        "florence sangim"
+        "play play"
+        "repo repo"
+        "footer footer";
+}
+
+/* all grid items -
+    these are the 10 direct children of the container
+    - all the grid items are here already!
+    You may add lines as needed. Do not change any line marked -keep-
+    */
+
+header {
+    grid-area: header; /* keep */
+    background: #fff; /* keep */
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+#florence {
+    grid-area: florence; /* keep */
+    background: #a8e8ff; /* keep */
+    padding: 1rem;
+}
+#sangim {
+    grid-area: sangim; /* keep */
+    background: #a8e8ff; /* keep */
+    padding: 1rem;
+}
+#play {
+  text-align: center;
+}
+  }
